@@ -6,6 +6,8 @@ import os
 
 # ============================ MIDI PROCESSING FUNCTIONS ============================
 
+# These are the new functions that I needed to write -- used internet tools for this
+
 def get_time_steps_from_midi(midi_file, resolution=10):
     """ Determine number of time steps for a MIDI file. """
     mid = mido.MidiFile(midi_file)
@@ -49,6 +51,7 @@ def midi_to_pattern(midi_file, num_neurons=100, time_steps=32):
 
 # ============================ HOPFIELD NETWORK FUNCTIONS ============================
 
+# These are just from Lab 3
 def imprint_patterns(patterns, num_neurons):
     """ Train a Hopfield network by imprinting patterns as weights. """
     weights = np.zeros((num_neurons, num_neurons))
@@ -69,6 +72,7 @@ def recall_pattern(weights, noisy_pattern, num_iterations=10):
 
 # ============================ NOISE INJECTION ============================
 
+# Literally sample random bits and flip the signs
 def add_noise_to_pattern(pattern, noise_level=0.1):
     """ Introduce controlled noise by flipping a fraction of bits. """
     noisy_pattern = np.copy(pattern)
@@ -79,7 +83,8 @@ def add_noise_to_pattern(pattern, noise_level=0.1):
 
 # ============================ MIDI OUTPUT ============================
 
-def pattern_to_midi(pattern, output_file, num_notes=88):
+# Again, new midi stuff that I needed to write -- used internet tools for this
+def pattern_to_midi(pattern, output_file, num_notes=88, save=False):
     """ Convert a recalled pattern back into a MIDI file. """
     min_note = 21  # Start of piano range
     pattern_size = len(pattern)
@@ -101,8 +106,11 @@ def pattern_to_midi(pattern, output_file, num_notes=88):
                 track.append(mido.Message('note_on', note=min_note + note_index, velocity=64, time=t * 100))
         track.append(mido.Message('note_off', note=min_note, velocity=64, time=100))
 
-    mid.save(output_file)
-    print(f"Saved recalled melody: {output_file}")
+    if save:
+        mid.save(output_file)
+        print(f"Saved recalled melody: {output_file}")
+    else:
+        print(f"{output_file} not saved. Set save=True to save the output.")
 
 # ============================ EXPERIMENT FUNCTION ============================
 
@@ -141,7 +149,7 @@ def run_noise_experiment(midi_file, noise_levels, num_trials=5):
             correct_retrievals += match_ratio
 
             # Save one recalled MIDI per noise level
-            midi_output = f"recalled_noise_{int(noise * 100)}.mid"
+            midi_output = f"recalled_noise_{midi_file[:-4]}_{int(noise * 100)}.mid"
             pattern_to_midi(recalled_pattern, midi_output)
 
         avg_accuracy = correct_retrievals / num_trials
@@ -161,14 +169,16 @@ def plot_recall_vs_noise(noise_levels, accuracy_results):
     plt.ylabel("Recall Accuracy")
     plt.title("Hopfield Network Recall Accuracy vs. Noise")
     plt.grid(True)
-    plt.show()
+    plt.savefig("recall_accuracy_vs_noise.png")
 
 # ============================ RUN EXPERIMENT ============================
 
 midi_file = "STARSSF.mid"
 
+import numpy as np
+
 # Define noise levels (0% to 70% flipped bits)
-noise_levels = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7]
+noise_levels = list(np.arange(0, 0.71, 0.01))  # [0.0, 0.1, ..., 0.7]
 
 # Run experiment
 accuracy_results = run_noise_experiment(midi_file, noise_levels, num_trials=5)

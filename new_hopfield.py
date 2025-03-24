@@ -3,6 +3,16 @@ import mido
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 import os
+import argparse
+import pandas as pd
+
+# ============================ SETUP ============================
+
+args = argparse.ArgumentParser(description="Hopfield Network for MIDI Pattern Recall")
+args.add_argument('--midi_file', type=str, default="STARSSF.mid", help="Path to the MIDI file")
+args.add_argument('--num_trials', type=int, default=5, help="Number of trials for each noise level")
+args.add_argument('--output_dir', type=str, default=".", help="Directory to save output MIDI files")
+args = args.parse_args()
 
 # ============================ MIDI PROCESSING FUNCTIONS ============================
 
@@ -114,7 +124,7 @@ def pattern_to_midi(pattern, output_file, num_notes=88, save=False):
 
 # ============================ EXPERIMENT FUNCTION ============================
 
-def run_noise_experiment(midi_file, noise_levels, num_trials=5):
+def run_noise_experiment(midi_file, noise_levels, num_trials=5, output_dir="."):
     """
     Run experiments where different levels of noise are added to a stored pattern.
 
@@ -126,6 +136,8 @@ def run_noise_experiment(midi_file, noise_levels, num_trials=5):
     Returns:
     - accuracy_results: list of recall accuracy per noise level
     """
+
+    df = pd.DataFrame(columns=["Noise Level", "Recall Accuracy", "Trial Number"])
     time_steps = get_time_steps_from_midi(midi_file)
     num_neurons = 88 * time_steps
 
@@ -140,7 +152,7 @@ def run_noise_experiment(midi_file, noise_levels, num_trials=5):
     for noise in noise_levels:
         correct_retrievals = 0
 
-        for _ in range(num_trials):
+        for trial in range(num_trials):
             noisy_pattern = add_noise_to_pattern(original_pattern, noise)
             recalled_pattern = recall_pattern(weights, noisy_pattern)
 
@@ -151,17 +163,22 @@ def run_noise_experiment(midi_file, noise_levels, num_trials=5):
             # Save one recalled MIDI per noise level
             midi_output = f"recalled_noise_{midi_file[:-4]}_{int(noise * 100)}.mid"
             pattern_to_midi(recalled_pattern, midi_output)
+            df.loc[len(df)] = [noise, match_ratio, trial + 1]
 
         avg_accuracy = correct_retrievals / num_trials
         accuracy_results.append(avg_accuracy)
 
         print(f"Noise Level {noise}: Recall Accuracy {avg_accuracy:.2f}")
 
+    # Save the results to a CSV file
+    df.to_csv(os.path.join(output_dir, "experiment_results.csv"), index=False)
+    print(f"Experiment results saved to {os.path.join(output_dir, 'experiment_results.csv')}")
+
     return accuracy_results
 
 # ============================ PLOT EXPERIMENT RESULTS ============================
 
-def plot_recall_vs_noise(noise_levels, accuracy_results):
+def plot_recall_vs_noise(noise_levels, accuracy_results, output_dir="."):
     """ Plot recall accuracy vs. noise level. """
     plt.figure(figsize=(8, 5))
     plt.plot(noise_levels, accuracy_results, marker='o', linestyle='-')
@@ -169,11 +186,14 @@ def plot_recall_vs_noise(noise_levels, accuracy_results):
     plt.ylabel("Recall Accuracy")
     plt.title("Hopfield Network Recall Accuracy vs. Noise")
     plt.grid(True)
-    plt.savefig("recall_accuracy_vs_noise.png")
+    plt.savefig(os.path.join(output_dir, "recall_vs_noise.png"))
+    plt.close()
 
 # ============================ RUN EXPERIMENT ============================
 
-midi_file = "STARSSF.mid"
+midi_file = args.midi_file
+num_trials = args.num_trials
+output_dir = args.output_dir
 
 import numpy as np
 
@@ -181,7 +201,7 @@ import numpy as np
 noise_levels = list(np.arange(0, 0.71, 0.01))  # [0.0, 0.1, ..., 0.7]
 
 # Run experiment
-accuracy_results = run_noise_experiment(midi_file, noise_levels, num_trials=5)
+accuracy_results = run_noise_experiment(midi_file, noise_levels, num_trials, output_dir)
 
 # Plot results
-plot_recall_vs_noise(noise_levels, accuracy_results)
+plot_recall_vs_noise(noise_levels, accuracy_results, output_dir)

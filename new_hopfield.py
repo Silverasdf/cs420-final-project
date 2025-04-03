@@ -137,6 +137,7 @@ def run_noise_experiment(midi_file, noise_levels, num_trials=5, output_dir="."):
     - accuracy_results: list of recall accuracy per noise level
     """
 
+
     df = pd.DataFrame(columns=["Noise Level", "Recall Accuracy", "Trial Number"])
     time_steps = get_time_steps_from_midi(midi_file)
     num_neurons = 88 * time_steps
@@ -169,16 +170,18 @@ def run_noise_experiment(midi_file, noise_levels, num_trials=5, output_dir="."):
         accuracy_results.append(avg_accuracy)
 
         print(f"Noise Level {noise}: Recall Accuracy {avg_accuracy:.2f}")
+    
+    midi_name = os.path.basename(midi_file)
 
     # Save the results to a CSV file
-    df.to_csv(os.path.join(output_dir, "experiment_results.csv"), index=False)
-    print(f"Experiment results saved to {os.path.join(output_dir, 'experiment_results.csv')}")
+    print(f"Experiment results saved to {os.path.join(output_dir, f'{midi_name[:-4]}.csv')}")
+    df.to_csv(os.path.join(output_dir, f"{midi_name[:-4]}.csv"), index=False)
 
     return accuracy_results
 
 # ============================ PLOT EXPERIMENT RESULTS ============================
 
-def plot_recall_vs_noise(noise_levels, accuracy_results, output_dir="."):
+def plot_recall_vs_noise(noise_levels, accuracy_results, output_dir=".", midi_file=""):
     """ Plot recall accuracy vs. noise level. """
     plt.figure(figsize=(8, 5))
     plt.plot(noise_levels, accuracy_results, marker='o', linestyle='-')
@@ -186,7 +189,9 @@ def plot_recall_vs_noise(noise_levels, accuracy_results, output_dir="."):
     plt.ylabel("Recall Accuracy")
     plt.title("Hopfield Network Recall Accuracy vs. Noise")
     plt.grid(True)
-    plt.savefig(os.path.join(output_dir, "recall_vs_noise.png"))
+    midi_name = os.path.basename(midi_file)
+    plt.savefig(os.path.join(output_dir, f"{midi_name[:-4]}.png"))
+    print(f"Plot saved to {os.path.join(output_dir, f'{midi_name[:-4]}.png')}")
     plt.close()
 
 # ============================ RUN EXPERIMENT ============================
@@ -198,10 +203,10 @@ output_dir = args.output_dir
 import numpy as np
 
 # Define noise levels (0% to 70% flipped bits)
-noise_levels = list(np.arange(0, 0.71, 0.01))  # [0.0, 0.1, ..., 0.7]
+noise_levels = list(np.arange(0, 0.71, 0.01))  # [0.00, 0.01, ..., 0.70]
 
 # Run experiment
 accuracy_results = run_noise_experiment(midi_file, noise_levels, num_trials, output_dir)
 
 # Plot results
-plot_recall_vs_noise(noise_levels, accuracy_results, output_dir)
+plot_recall_vs_noise(noise_levels, accuracy_results, output_dir, midi_file)

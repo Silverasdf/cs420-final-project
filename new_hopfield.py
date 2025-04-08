@@ -203,7 +203,7 @@ output_dir = args.output_dir
 import numpy as np
 
 # Define noise levels (0% to 70% flipped bits)
-noise_levels = list(np.arange(0, 0.71, 0.01))  # [0.00, 0.01, ..., 0.70]
+noise_levels = list(np.arange(0, 0.71, 0.05))  # [0.00, 0.05, ..., 0.70]
 
 # Run experiment
 accuracy_results = run_noise_experiment(midi_file, noise_levels, num_trials, output_dir)

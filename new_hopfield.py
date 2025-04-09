@@ -9,9 +9,9 @@ import pandas as pd
 # ============================ SETUP ============================
 
 args = argparse.ArgumentParser(description="Hopfield Network for MIDI Pattern Recall")
-args.add_argument('--midi_file', type=str, default="STARSSF.mid", help="Path to the MIDI file")
+args.add_argument('--midi_file', type=str, default="midi_files/STARSSF.mid", help="Path to the MIDI file")
 args.add_argument('--num_trials', type=int, default=5, help="Number of trials for each noise level")
-args.add_argument('--output_dir', type=str, default=".", help="Directory to save output MIDI files")
+args.add_argument('--output_dir', type=str, default="outputs/", help="Directory to save output MIDI files")
 args = args.parse_args()
 
 # ============================ MIDI PROCESSING FUNCTIONS ============================
@@ -163,13 +163,13 @@ def run_noise_experiment(midi_file, noise_levels, num_trials=5, output_dir="."):
 
             # Save one recalled MIDI per noise level
             midi_output = f"recalled_noise_{midi_file[:-4]}_{int(noise * 100)}.mid"
-            pattern_to_midi(recalled_pattern, midi_output)
+            #pattern_to_midi(recalled_pattern, midi_output)
             df.loc[len(df)] = [noise, match_ratio, trial + 1]
 
         avg_accuracy = correct_retrievals / num_trials
         accuracy_results.append(avg_accuracy)
 
-        print(f"Noise Level {noise}: Recall Accuracy {avg_accuracy:.2f}")
+        print(f"{midi_file}: Noise Level {noise}: Recall Accuracy {avg_accuracy:.2f}")
     
     midi_name = os.path.basename(midi_file)
 

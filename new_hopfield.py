@@ -49,13 +49,21 @@ def midi_to_pattern(midi_file, num_neurons=100, time_steps=32):
             break
 
     flattened_pattern = pattern_matrix.flatten()
+
+    # Case 1: Reduce pattern using PCA (only if we have enough samples, which we don’t here)
     if num_neurons < original_neurons:
-        pca = PCA(n_components=num_neurons)
-        reduced_pattern = pca.fit_transform(flattened_pattern.reshape(1, -1))
-        return np.sign(reduced_pattern.flatten())
+        if num_neurons == 1:
+            return np.array([np.sign(np.mean(flattened_pattern))])  # fallback to 1D
+        # Instead of PCA, manually downsample for 1 pattern
+        indices = np.round(np.linspace(0, original_neurons - 1, num_neurons)).astype(int)
+        reduced = flattened_pattern[indices]
+        return reduced
+
+    # Case 2: Pad with -1s if too few features
     elif num_neurons > original_neurons:
         padding = np.full(num_neurons - original_neurons, -1)
         return np.concatenate((flattened_pattern, padding))
+
     else:
         return flattened_pattern
 
@@ -64,8 +72,9 @@ def midi_to_pattern(midi_file, num_neurons=100, time_steps=32):
 # These are just from Lab 3
 def imprint_patterns(patterns, num_neurons):
     """ Train a Hopfield network by imprinting patterns as weights. """
-    weights = np.zeros((num_neurons, num_neurons))
+    weights = np.zeros((num_neurons, num_neurons), dtype=np.float32)
     for pattern in patterns:
+        pattern = pattern.astype(np.float32)
         weights += np.outer(pattern, pattern)
     weights /= num_neurons
     np.fill_diagonal(weights, 0)  # No self-connections
@@ -139,8 +148,15 @@ def run_noise_experiment(midi_file, noise_levels, num_trials=5, output_dir="."):
 
 
     df = pd.DataFrame(columns=["Noise Level", "Recall Accuracy", "Trial Number"])
-    time_steps = get_time_steps_from_midi(midi_file)
-    num_neurons = 88 * time_steps
+
+    # LIMIT time steps to reduce neuron count
+    time_steps = min(get_time_steps_from_midi(midi_file), 32)
+    original_neurons = 88 * time_steps
+
+    # LIMIT max neurons to something manageable (e.g., 1024)
+    num_neurons = min(original_neurons, 1024)
+
+    print(f"Using {num_neurons} neurons (original pattern size = {original_neurons})")
 
     # Convert MIDI to a pattern
     original_pattern = midi_to_pattern(midi_file, num_neurons, time_steps)

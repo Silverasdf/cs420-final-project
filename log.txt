@@ -1,0 +1,381 @@
+[['Bambi.mid', 'Dr.Zhivago.mid', 'Fildan-SetetesAirHina.mid', 'FuneralSong.mid', 'IAintGoinDown.mid'], ['Japan.mid', 'JumpForMyLove.mid', 'Lady.mid', 'Mask.mid', 'MeandBobbyMcGee.mid'], ['Problems.mid', 'RunToYou.mid', 'RunningBlind.mid', 'STARSSF.mid', 'StateOfMine.mid'], ['TechnoDeChocobo.mid', 'TheReignOfShemsuHor.mid', 'TooManyRivers.mid', 'Vincent.mid', 'WhatAboutLove.mid']]
+Processing Bambi.mid...
+Processing Japan.mid...
+Processing Problems.mid...
+Processing TechnoDeChocobo.mid...
+Using 1024 neurons (original pattern size = 2816)
+Using 1024 neurons (original pattern size = 2816)
+Using 1024 neurons (original pattern size = 2816)
+Using 1024 neurons (original pattern size = 2816)
+midi_files/Japan.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/Bambi.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/Bambi.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Bambi.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/TechnoDeChocobo.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/Bambi.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/TechnoDeChocobo.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/Bambi.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Bambi.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/TechnoDeChocobo.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/Bambi.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.5: Recall Accuracy 0.50
+midi_files/TechnoDeChocobo.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/Bambi.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/TechnoDeChocobo.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/Bambi.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/TechnoDeChocobo.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.5: Recall Accuracy 0.50
+midi_files/Bambi.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/Japan.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/TechnoDeChocobo.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/Bambi.mid: Noise Level 0.5: Recall Accuracy 0.50
+midi_files/Japan.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\Japan.csv
+midi_files/TechnoDeChocobo.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+Plot saved to outputs\Japan.png
+midi_files/Bambi.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/TechnoDeChocobo.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.65: Recall Accuracy 0.00
+Processing JumpForMyLove.mid...
+midi_files/Bambi.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/TechnoDeChocobo.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/Problems.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\Problems.csv
+midi_files/Bambi.mid: Noise Level 0.65: Recall Accuracy 0.00
+Plot saved to outputs\Problems.png
+midi_files/TechnoDeChocobo.mid: Noise Level 0.5: Recall Accuracy 0.60
+Processing RunToYou.mid...
+midi_files/Bambi.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\Bambi.csv
+midi_files/TechnoDeChocobo.mid: Noise Level 0.55: Recall Accuracy 0.00
+Plot saved to outputs\Bambi.png
+midi_files/TechnoDeChocobo.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+Processing Dr.Zhivago.mid...
+midi_files/TechnoDeChocobo.mid: Noise Level 0.65: Recall Accuracy 0.00
+Using 1024 neurons (original pattern size = 2816)
+midi_files/TechnoDeChocobo.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\TechnoDeChocobo.csv
+Plot saved to outputs\TechnoDeChocobo.png
+Processing TheReignOfShemsuHor.mid...
+Using 1024 neurons (original pattern size = 2816)
+midi_files/JumpForMyLove.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.05: Recall Accuracy 1.00
+Using 1024 neurons (original pattern size = 2816)
+midi_files/JumpForMyLove.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/RunToYou.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/RunToYou.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.1: Recall Accuracy 1.00
+Using 1024 neurons (original pattern size = 2816)
+midi_files/RunToYou.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/RunToYou.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/RunToYou.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/RunToYou.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/RunToYou.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.5: Recall Accuracy 0.30
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/RunToYou.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/RunToYou.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/RunToYou.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/JumpForMyLove.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.5: Recall Accuracy 0.50
+midi_files/RunToYou.mid: Noise Level 0.5: Recall Accuracy 0.60
+midi_files/JumpForMyLove.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\JumpForMyLove.csv
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.55: Recall Accuracy 0.00
+Plot saved to outputs\JumpForMyLove.png
+midi_files/RunToYou.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+Processing Lady.mid...
+midi_files/RunToYou.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/Dr.Zhivago.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/RunToYou.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.5: Recall Accuracy 0.50
+midi_files/Dr.Zhivago.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\Dr.Zhivago.csv
+midi_files/RunToYou.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\RunToYou.csv
+Plot saved to outputs\Dr.Zhivago.png
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.55: Recall Accuracy 0.00
+Plot saved to outputs\RunToYou.png
+Processing Fildan-SetetesAirHina.mid...
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+Processing RunningBlind.mid...
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.65: Recall Accuracy 0.00
+Using 1024 neurons (original pattern size = 2816)
+midi_files/TheReignOfShemsuHor.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\TheReignOfShemsuHor.csv
+Plot saved to outputs\TheReignOfShemsuHor.png
+Processing TooManyRivers.mid...
+midi_files/Lady.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.1: Recall Accuracy 1.00
+Using 1024 neurons (original pattern size = 2816)
+Using 1024 neurons (original pattern size = 2816)
+midi_files/Lady.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.25: Recall Accuracy 1.00
+Using 1024 neurons (original pattern size = 2816)
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/TooManyRivers.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/TooManyRivers.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/TooManyRivers.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/TooManyRivers.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.5: Recall Accuracy 0.30
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/TooManyRivers.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/TooManyRivers.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/TooManyRivers.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/Lady.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/TooManyRivers.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.5: Recall Accuracy 0.70
+midi_files/Lady.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\Lady.csv
+midi_files/TooManyRivers.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/RunningBlind.mid: Noise Level 0.55: Recall Accuracy 0.00
+Plot saved to outputs\Lady.png
+midi_files/TooManyRivers.mid: Noise Level 0.45: Recall Accuracy 1.00
+Processing Mask.mid...
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.5: Recall Accuracy 0.70
+midi_files/RunningBlind.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/TooManyRivers.mid: Noise Level 0.5: Recall Accuracy 0.70
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/RunningBlind.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/TooManyRivers.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/RunningBlind.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\RunningBlind.csv
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+Plot saved to outputs\RunningBlind.png
+midi_files/TooManyRivers.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.65: Recall Accuracy 0.00
+Processing STARSSF.mid...
+midi_files/TooManyRivers.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/Fildan-SetetesAirHina.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\Fildan-SetetesAirHina.csv
+Plot saved to outputs\Fildan-SetetesAirHina.png
+midi_files/TooManyRivers.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\TooManyRivers.csv
+Processing FuneralSong.mid...
+Plot saved to outputs\TooManyRivers.png
+Using 1024 neurons (original pattern size = 2816)
+Processing Vincent.mid...
+midi_files/Mask.mid: Noise Level 0.0: Recall Accuracy 1.00
+Using 1024 neurons (original pattern size = 1408)
+midi_files/Mask.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.1: Recall Accuracy 1.00
+Using 1024 neurons (original pattern size = 2816)
+midi_files/Mask.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/STARSSF.mid: Noise Level 0.0: Recall Accuracy 1.00
+Using 1024 neurons (original pattern size = 2816)
+midi_files/Mask.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/STARSSF.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/STARSSF.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/STARSSF.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/STARSSF.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/STARSSF.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/Vincent.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/STARSSF.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Vincent.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.5: Recall Accuracy 0.90
+midi_files/STARSSF.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/Vincent.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/STARSSF.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/Vincent.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/STARSSF.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/Vincent.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/STARSSF.mid: Noise Level 0.5: Recall Accuracy 0.70
+midi_files/Vincent.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/Mask.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\Mask.csv
+midi_files/STARSSF.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/Vincent.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.4: Recall Accuracy 1.00
+Plot saved to outputs\Mask.png
+midi_files/STARSSF.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/Vincent.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+Processing MeandBobbyMcGee.mid...
+midi_files/FuneralSong.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/STARSSF.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/Vincent.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.5: Recall Accuracy 0.60
+midi_files/STARSSF.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\STARSSF.csv
+midi_files/Vincent.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/FuneralSong.mid: Noise Level 0.55: Recall Accuracy 0.00
+Plot saved to outputs\STARSSF.png
+midi_files/Vincent.mid: Noise Level 0.5: Recall Accuracy 0.60
+midi_files/FuneralSong.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+Processing StateOfMine.mid...
+midi_files/Vincent.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/FuneralSong.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/Vincent.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/FuneralSong.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\FuneralSong.csv
+Using 1024 neurons (original pattern size = 2816)
+midi_files/Vincent.mid: Noise Level 0.65: Recall Accuracy 0.00
+Plot saved to outputs\FuneralSong.png
+Processing IAintGoinDown.mid...
+midi_files/Vincent.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\Vincent.csv
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.0: Recall Accuracy 1.00
+Plot saved to outputs\Vincent.png
+Processing WhatAboutLove.mid...
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.05: Recall Accuracy 1.00
+Using 1024 neurons (original pattern size = 2816)
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/StateOfMine.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/StateOfMine.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.2: Recall Accuracy 1.00
+Using 1024 neurons (original pattern size = 2816)
+midi_files/StateOfMine.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/StateOfMine.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+Using 1024 neurons (original pattern size = 2816)
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/StateOfMine.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/StateOfMine.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/StateOfMine.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.5: Recall Accuracy 0.80
+midi_files/StateOfMine.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/StateOfMine.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/StateOfMine.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/StateOfMine.mid: Noise Level 0.5: Recall Accuracy 0.40
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/WhatAboutLove.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/IAintGoinDown.mid: Noise Level 0.0: Recall Accuracy 1.00
+midi_files/StateOfMine.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/MeandBobbyMcGee.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\MeandBobbyMcGee.csv
+midi_files/WhatAboutLove.mid: Noise Level 0.05: Recall Accuracy 1.00
+midi_files/IAintGoinDown.mid: Noise Level 0.05: Recall Accuracy 1.00
+Plot saved to outputs\MeandBobbyMcGee.png
+midi_files/StateOfMine.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/WhatAboutLove.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/IAintGoinDown.mid: Noise Level 0.1: Recall Accuracy 1.00
+midi_files/StateOfMine.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/WhatAboutLove.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/IAintGoinDown.mid: Noise Level 0.15000000000000002: Recall Accuracy 1.00
+midi_files/StateOfMine.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\StateOfMine.csv
+midi_files/WhatAboutLove.mid: Noise Level 0.2: Recall Accuracy 1.00
+Plot saved to outputs\StateOfMine.png
+midi_files/IAintGoinDown.mid: Noise Level 0.2: Recall Accuracy 1.00
+midi_files/WhatAboutLove.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/IAintGoinDown.mid: Noise Level 0.25: Recall Accuracy 1.00
+midi_files/WhatAboutLove.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/IAintGoinDown.mid: Noise Level 0.30000000000000004: Recall Accuracy 1.00
+midi_files/WhatAboutLove.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/IAintGoinDown.mid: Noise Level 0.35000000000000003: Recall Accuracy 1.00
+midi_files/WhatAboutLove.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/IAintGoinDown.mid: Noise Level 0.4: Recall Accuracy 1.00
+midi_files/WhatAboutLove.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/IAintGoinDown.mid: Noise Level 0.45: Recall Accuracy 1.00
+midi_files/WhatAboutLove.mid: Noise Level 0.5: Recall Accuracy 0.40
+midi_files/IAintGoinDown.mid: Noise Level 0.5: Recall Accuracy 0.40
+midi_files/WhatAboutLove.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/IAintGoinDown.mid: Noise Level 0.55: Recall Accuracy 0.00
+midi_files/WhatAboutLove.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/IAintGoinDown.mid: Noise Level 0.6000000000000001: Recall Accuracy 0.00
+midi_files/WhatAboutLove.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/IAintGoinDown.mid: Noise Level 0.65: Recall Accuracy 0.00
+midi_files/WhatAboutLove.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\WhatAboutLove.csv
+midi_files/IAintGoinDown.mid: Noise Level 0.7000000000000001: Recall Accuracy 0.00
+Experiment results saved to outputs\IAintGoinDown.csv
+Plot saved to outputs\WhatAboutLove.png
+Plot saved to outputs\IAintGoinDown.png

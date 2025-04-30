@@ -31,7 +31,7 @@ def note_events_to_vector(notes, quantization=0.25, time_range=60.0):
         vector.extend(bin_vector)
     return np.array(vector, dtype=np.uint8)
 
-# ✅ 3. Add structured noise: controlled pitch shifting and note dropping
+# 3. Add structured noise: controlled pitch shifting and note dropping
 def add_structured_note_noise(vector, pitch_shift_prob=0.1, drop_note_prob=0.05):
     piano_roll = np.reshape(vector.copy(), (-1, 128))
     num_timesteps, num_notes = piano_roll.shape
